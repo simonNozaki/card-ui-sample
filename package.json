@@ -1,0 +1,33 @@
+{
+  "name": "card-ui-sample",
+  "version": "0.0.1",
+  "description": "Card UI Vue.js sample",
+  "scripts": {
+    "build:server": "NODE_ENV=production npx webpack --config webpack.server.config.ts",
+    "build:client": "NODE_ENV=production npx webpack --config webpack.client.config.ts",
+    "build": "pnpm build:client && pnpm build:server",
+    "start": "node src/index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "vue": "2.7.16",
+    "vue-server-renderer": "2.7.16"
+  },
+  "packageManager": "pnpm@9.0.6",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "@types/webpack": "^4.41.26",
+    "@types/webpack-merge": "^4.1.5",
+    "ts-loader": "8.4.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.7.2",
+    "vue-loader": "15.11.1",
+    "vue-template-compiler": "2.7.16",
+    "webpack": "4.47.0",
+    "webpack-cli": "3.3.12",
+    "webpack-merge": "4.2.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
